@@ -1,0 +1,6 @@
+FinalTerm_web存放各HTML網站
+FinalTermdata存放後台DB資料庫
+FinalTermviews存放用資料庫或傳送資料Rand出來的網頁
+
+請使用launch.json name為
+Launch Program Endserver 或 Launch Endserver2進行編譯
