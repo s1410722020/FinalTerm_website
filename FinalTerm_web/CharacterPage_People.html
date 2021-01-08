@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>牧場物語 重聚礦石鎮 角色介紹_居民</title>
+</head>
+
+<body>
+    <div id="BG-Up">
+        <div class="container">
+            <div class="row">
+                <!-- Logo圖片 -->
+                <div class="col-xs-12 col-md-12 col-lg-4 text-center">
+                    <a href="HomePage.html"><img class="img-fluid" src="Image/LOGO/Logo_sm.png" alt="Logo"></a>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-2 text-center">
+                    <img class="img-fluid" src="Image/LOGO/small_switch.jpg" alt="switch.jpg">
+                    <a href="https://www.marv.jp/"><img class="img-fluid" src="Image/LOGO/small_marvelous.png"
+                            alt="marvelous.png"></a>
+                </div>
+                <!-- 下拉式選單 -->
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <div class="btn-group">
+                        <a type="button" href="StoryPage.html" class="btn btn-primary">故事大綱</a>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown" data-toggle="dropdown">
+                                人物介紹
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="CharacterPage_Main.html">主角</a>
+                                <a class="dropdown-item" href="CharacterPage_Male.html#img1">結婚對象（男）</a>
+                                <a class="dropdown-item" href="CharacterPage_Female.html#img1">結婚對象（女）</a>
+                                <a class="dropdown-item" href="CharacterPage_Hide.html#img1">結婚對象（隱藏）</a>
+                                <a class="dropdown-item" href="CharacterPage_People.html">城鎮居民</a>
+                                <a class="dropdown-item" href="CharacterPage_Animals.html">動物們</a>
+                            </div>
+                        </div>
+                        <a type="button" href="FeaturesPage.html" class="btn btn-primary">遊戲特色</a>
+                        <a type="button" href="VideoPage.html" class="btn btn-primary">介紹影片</a>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown" data-toggle="dropdown">
+                                更新情報
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/announcement">更新日誌</a>
+                                <a class="dropdown-item" href="ResponsePage.html">問題回報</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown" data-toggle="dropdown">
+                                社群連結
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.facebook.com/sega.asiacs"
+                                    target="_blank">Facebook</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/user/SEGAasia/"
+                                    target="_blank">Youtube</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown" data-toggle="dropdown">
+                                訪客回饋
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="VisitorMessagePage.html">訪客回饋</a>
+                                <a class="dropdown-item" href="/Forum">討論區</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片輪播 -->
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12" id="carousel">
+                    <section>
+                        <div class="carousel slide" data-ride="carousel" data-interval="2500">
+                            <div class="carousel-inner">
+                                <!-- 圖片1 -->
+                                <div class="carousel-item active">
+                                    <img src="Image/ImageFlow/People/01.PNG" alt="Flow_1.jpg" width=100%>
+                                </div>
+                                <!-- 圖片2 -->
+                                <div class="carousel-item">
+                                    <img src="Image/ImageFlow/People/02.PNG" alt="Flow_2.jpg" width=100%>
+                                </div>
+                                <!-- 圖片3 -->
+                                <div class="carousel-item">
+                                    <img src="Image/ImageFlow/People/03.PNG" alt="Flow_3.jpg" width=100%>
+                                </div>
+                                <!-- 圖片4 -->
+                                <div class="carousel-item">
+                                    <img src="Image/ImageFlow/People/04.PNG" alt="Flow_4.jpg" width=100%>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- 居民頭像_第一排 -->
+            <div class="row">
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#anna_Text" id="Button-none">
+                        <img src="Image/Characters/Small/anna-img_s.png" alt="anna-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#basil_Text" id="Button-none">
+                        <img src="Image/Characters/Small/basil-img_s.png" alt="basil-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#ban_Text" id="Button-none">
+                        <img src="Image/Characters/Small/character-ban_s.png" alt="character-ban_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#dadd_Text" id="Button-none">
+                        <img src="Image/Characters/Small/character-dadd_s.png" alt="character-dadd_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#duke_Text" id="Button-none">
+                        <img src="Image/Characters/Small/character-duke_s.png" alt="character-duke_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#gods_Text" id="Button-none">
+                        <img src="Image/Characters/Small/character-gods_s.png" alt="character-gods_s.png" width=100%>
+                    </button>
+                </div>
+
+            </div>
+            <!-- 居民頭像_第二排 -->
+            <div class="row">
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#loo_Text" id="Button-none">
+                        <img src="Image/Characters/Small/character-loo_s.png" alt="character-loo_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#mana_Text" id="Button-none">
+                        <img src="Image/Characters/Small/character-mana_s.png" alt="character-mana_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#zaku_Text" id="Button-none">
+                        <img src="Image/Characters/Small/character-zaku_s.png" alt="character-zaku_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#ellen_Text" id="Button-none">
+                        <img src="Image/Characters/Small/ellen-img_s.png" alt="ellen-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#haris_Text" id="Button-none">
+                        <img src="Image/Characters/Small/haris-img_s.png" alt="haris-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#jefu_Text" id="Button-none">
+                        <img src="Image/Characters/Small/jefu-img_s.png" alt="jefu-img_s.png" width=100%>
+                    </button>
+                </div>
+
+            </div>
+            <!-- 居民頭像_第三排 -->
+            <div class="row">
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#kata_Text" id="Button-none">
+                        <img src="Image/Characters/Small/kata-img_s.png" alt="kata-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#koro_Text" id="Button-none">
+                        <img src="Image/Characters/Small/koro-img_s.png" alt="koro-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#mei_Text" id="Button-none">
+                        <img src="Image/Characters/Small/mei-img_s.png" alt="mei-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#mugi_Text" id="Button-none">
+                        <img src="Image/Characters/Small/mugi-img_s.png" alt="mugi-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#riria_Text" id="Button-none">
+                        <img src="Image/Characters/Small/riria-img_s.png" alt="riria-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#saibara_Text" id="Button-none">
+                        <img src="Image/Characters/Small/saibara-img_s.png" alt="saibara-img_s.png" width=100%>
+                    </button>
+                </div>
+
+            </div>
+            <!-- 居民頭像_第四排 -->
+            <div class="row">
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#sasha_Text" id="Button-none">
+                        <img src="Image/Characters/Small/sasha-img_s.png" alt="sasha-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#tomas_Text" id="Button-none">
+                        <img src="Image/Characters/Small/tomas-img_s.png" alt="tomas-img_s.png" width=100%>
+                    </button>
+                </div>
+                <div class="col-md-2">
+                    <button data-toggle="modal" data-target="#yuu_Text" id="Button-none">
+                        <img src="Image/Characters/Small/yuu-img_s.png" alt="yuu-img_s.png" width=100%>
+                    </button>
+                </div>
+            </div>
+            <!-- 彈出式視窗1 -->
+            <div class="modal fade" id="anna_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/anna-txt.png" alt="anna-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗2 -->
+            <div class="modal fade" id="basil_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/basil-txt.png" alt="basil-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗3 -->
+            <div class="modal fade" id="ban_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/ban-txt.png" alt="ban-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗4 -->
+            <div class="modal fade" id="dadd_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/dadd-txt.png" alt="dadd-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗5 -->
+            <div class="modal fade" id="duke_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/duke-txt.png" alt="duke-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗6 -->
+            <div class="modal fade" id="gods_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/gods-txt.png" alt="gods-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗7 -->
+            <div class="modal fade" id="loo_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/loo-txt.png" alt="loo-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗8 -->
+            <div class="modal fade" id="mana_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/mana-txt.png" alt="mana-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗9 -->
+            <div class="modal fade" id="zaku_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/zaku-txt.png" alt="zaku-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗10 -->
+            <div class="modal fade" id="ellen_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/ellen-txt.png" alt="ellen-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗11 -->
+            <div class="modal fade" id="haris_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/haris-txt.png" alt="haris-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗12 -->
+            <div class="modal fade" id="jefu_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/jefu-txt.png" alt="jefu-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗13 -->
+            <div class="modal fade" id="kata_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/kata-txt.png" alt="kata-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗14 -->
+            <div class="modal fade" id="koro_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/koro-txt.png" alt="koro-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗15 -->
+            <div class="modal fade" id="mei_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/mei-txt.png" alt="mei-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗16 -->
+            <div class="modal fade" id="mugi_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/mugi-txt.png" alt="mugi-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗17 -->
+            <div class="modal fade" id="riria_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/riria-txt.png" alt="riria-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗18 -->
+            <div class="modal fade" id="saibara_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/saibara-txt.png" alt="saibara-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗19 -->
+            <div class="modal fade" id="sasha_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/sasha-txt.png" alt="sasha-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗20 -->
+            <div class="modal fade" id="tomas_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/tomas-txt.png" alt="tomas-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出式視窗21 -->
+            <div class="modal fade" id="yuu_Text">
+                <div class="modal-dialog modal-md modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="Image/Words/People/yuu-txt.png" alt="yuu-txt.png" width=100%>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4" id="Footer">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <div class="text-center">
+                        <!-- Content -->
+                        <h5 class="text-uppercase font-weight-bold pb-3">遊戲資訊</h5>
+                        <p>遊戲名稱：牧場物語　重聚礦石鎮</p>
+                        <p>遊戲平台：Nintendo Switch TM</p>
+                        <p>遊戲類型：溫馨生活遊戲</p>
+                        <p>發售日期：2019年10月17日（四）</p>
+                        <p>建議售價：5,800日圓 + 稅</p>
+                        <p>遊玩人數：1人</p>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold pb-3">常用連結</h5>
+                    <div class="container">
+                        <div class="row">
+                            <a href="https://www.facebook.com/sega.asiacs"><img class="p-3"
+                                    src="Image/Icon/Facebook.png" alt="Facebook.png"></a>
+                            <a href="https://www.marv.jp/"><img class="p-3" src="Image/Icon/marvelous.png"
+                                    alt="marvelous.png"></a>
+                            <a href="http://asia.sega.com/cht/"><img class="p-3" src="Image/Icon/Sega.png"
+                                    alt="Sega.png"></a>
+                        </div>
+                        <div class="row">
+                            <a href="https://www.nintendo.tw/hardware/switch/feature/"><img class="p-3"
+                                    src="Image/Icon/switch.jpg" alt="switch.jpg"></a>
+                            <a href="https://passport.weibo.com/"><img class="p-3" src="Image/Icon/Weibo.png"
+                                    alt="Weibo.png"></a>
+                            <a href="https://www.youtube.com/user/SEGAasia/"><img class="p-3"
+                                    src="Image/Icon/Youtube.png" alt="Youtube.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-10">
+                <div class="text-center py-3">組員名單
+                    <p>1410722020 楊采妮 1410722023 况映彤 1410722034 王鴻逸</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>瀏覽人次：</p>
+                <img src="https://www.mfwzjsq.com/hit.php?id=zexaqc&nd=6&style=99" alt="網頁計數器">
+            </div>
+        </div>
+
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- 網頁Top按鈕 -->
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+        $(function () {
+            $('#BackTop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 333);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</body>
+
+</html>

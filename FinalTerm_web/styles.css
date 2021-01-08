@@ -1,0 +1,171 @@
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.embed-responsive-16by9 {
+    padding-top: 0%;
+}
+
+body{
+    background-image: url(Image/Background/BG_Small.png);
+}
+
+#BG-Up{
+    background-image: url(Image/Background/BG_Up.png);
+    background-repeat:repeat-x;
+}
+
+#BG_Story {
+    background-image: url(Image/Background/BG_Story.png)
+}
+
+#Test {
+    background-color: #567229;
+}
+
+a:link {
+    color: #b9d887;
+}
+
+.dropdown-item{
+    color: #567229;
+}
+
+.dropdown-item:hover{
+    color: #b9d887;
+}
+
+#carousel {
+    background-image:linear-gradient(#b9d887,#427752,#b9d887);;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #427752;
+    border-color: #ffffff;
+    color: #b9d887;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active:hover {
+    color: #427752;
+    background-color: #b9d887;
+    border-color: #ffffff;
+}
+
+/* 遊戲特色-大按鈕 */
+
+#TurnOff{
+    position: relative;
+}
+
+#TurnOn{
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+}
+
+#TurnOn:hover{
+    opacity: 1;
+}
+
+/* 按鈕隱藏 */
+
+#Button-none{
+    color: #ffffff00;
+    background-color: #ffffff00;
+    border-color: #ffffff00;
+    border-style: none;
+}
+
+#Button-none-word{
+    color: #000000;
+    background-color: #ffffff00;
+    border-color: #ffffff00;
+    border-style: none;
+}
+
+/* 遊戲特色-種田Step */
+
+#FarmSteps{
+    position: absolute;
+    bottom: 0px;
+    top: -10px;
+    left: -10px;
+}
+
+/* 角色圖片、資訊切換 */
+
+#ImageChange>div {
+    display: none;
+}
+
+#ImageChange>div:target {
+    display: block;
+}
+
+#White-box {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#padding {
+    padding-top: 10%;
+}
+
+/* 驗證碼 */
+
+.input-val {
+    width: 230px;
+    height: 32px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#canvas {
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: #ddd;
+}
+
+/* 48px的網頁捲動按鈕 */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+#Footer {
+    background-color: #567229;
+    color: #b9d887;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "webfirst",
+  "version": "1.0.0",
+  "description": "[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=3168030&assignment_repo_type=AssignmentRepo)\r # intro-html\r HTML/CSS 簡介",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multimediadesign/webpage-s1410722020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/multimediadesign/webpage-s1410722020/issues"
+  },
+  "homepage": "https://github.com/multimediadesign/webpage-s1410722020#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.1",
+    "chart.js": "^2.9.4",
+    "crypto-js": "^4.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2",
+    "fs": "0.0.1-security",
+    "image-size": "^0.9.3",
+    "jQuery": "^1.7.4",
+    "mongoose": "^5.10.16",
+    "nedb": "^1.8.0"
+  }
+}

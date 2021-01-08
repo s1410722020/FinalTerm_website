@@ -1,0 +1,58 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "目前選取檔案",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program server",
+            "program": "${workspaceFolder}\\server.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program Endserver",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\EndTermserver.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program 1",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Code10\\1.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Endserver2",
+            "attachSimplePort": 0,
+            "program": "${workspaceFolder}/EndTermserver",
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch server2",
+            "attachSimplePort": 0,
+            "program": "${workspaceFolder}/server",
+        }
+    ]
+}
