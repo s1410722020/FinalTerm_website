@@ -12,6 +12,7 @@ var Users = new Datastore({ filename: __dirname + '/FinalTermdata/usersresponse.
 
 var Photos = new Datastore({ filename: __dirname + '/FinalTermdata/standings.db', autoload: true, });
 
+var UsersPics = new Datastore({filename:__dirname+'/FinalTermdata/responsepics.db',autoload:true});
 // var userData = [
 // {"title":"試看看布告欄底下功能","date":"2020/12/22","img":"test","content":"內容測試測試，希望能成功"}];
 //  {"title":"測試分頁1","date":"2021/1/7","img":"test","content":"分頁加油啊1"},
@@ -65,6 +66,7 @@ server.post("/response", function (req, res) {//問題回報
           res.render("error", { error: "Cannot read uploaded image file.", next: "javascript:history.back()" })
         } else {
           //res.render("game", { id: gotFields.id })
+          UsersPics.insert({email:gotFields.email,tel:gotFields.tel,pwd:gotFields.pwd,id:gotFields.id,game:gotFields.game,question:gotFields.question});
           res.render("success", { success: "Success uploaded.", next: "javascript:history.back()" });
 
         }
@@ -114,6 +116,7 @@ server.post("/visitormessage", function (req, res) {//訪客回饋，即時更�
   count++;
   console.log(count);
   req.body.like = Number(req.body.like);
+  req.body.dislike = Number(req.body.dislike);
   Users.insert(req.body);
   res.render("success", { success: "Success Send", next: "VisitorMessagePage.html" });
   //   }
